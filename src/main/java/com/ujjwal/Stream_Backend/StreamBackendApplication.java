@@ -10,7 +10,7 @@ import io.github.cdimascio.dotenv.Dotenv;
 public class StreamBackendApplication {
 	
 	static {
-        Dotenv dotenv = Dotenv.load(); // Load .env file
+	Dotenv dotenv = Dotenv.configure().ignoreIfMissing().load();
         dotenv.entries().forEach(entry ->
             System.setProperty(entry.getKey(), entry.getValue())
         );
