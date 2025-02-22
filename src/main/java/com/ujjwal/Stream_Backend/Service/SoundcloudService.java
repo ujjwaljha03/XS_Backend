@@ -190,7 +190,7 @@ public class SoundcloudService {
 				tokenRepository.save(tokenModel);
 
 				// AFTER OAUTH LOGIN REDIRECTING TO FORNTEND PAGE
-				res.sendRedirect("http://localhost:3000/"); // NEED TO CHANGE WITH REAL FRONTEND URL WHEN DEPLOYED
+				res.sendRedirect("https://xstreamer.vercel.app/"); 
 			}
 
 			// else {
