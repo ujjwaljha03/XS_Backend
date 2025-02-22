@@ -103,7 +103,7 @@ public class SpotifyService {
 				tokenModel.setProduct(userIdAndProduct.get("product"));
 				tokenRepository.save(tokenModel);
 
-				res.sendRedirect("http://localhost:3000/"); // NEED TO CHANGE WITH REAL FRONTEND URL WHEN DEPLOYED
+				res.sendRedirect("https://xstreamer.vercel.app/");
 			}
 
 		} catch (Exception e) {
