@@ -9,7 +9,7 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("http://localhost:3000","http.api.prod.api-public.srv.db.s-cloud.net")  // Your frontend URL
+                .allowedOrigins("https://xstreamer.vercel.app", "https://www.xstreamer.vercel.app")  // Your frontend URL
                 .allowCredentials(true) // Important for session persistence
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowedHeaders("*");
